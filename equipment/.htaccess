@@ -1,0 +1,16 @@
+ErrorDocument 404 http://localhost/ironhouse/equipment/404.php
+RewriteEngine On
+Options +FollowSymlinks
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+
+RewriteRule ^o_nas/$ about.php [QSA,L]
+RewriteRule ^articles/$ articles.php [QSA,L]
+RewriteRule ^partners/$ partners.php [QSA,L]
+RewriteRule ^contacts/$ kont.php [QSA,L]
+RewriteRule ^services/$ services.php [QSA,L]
+RewriteRule ^typical_solutions/$ projects.php [QSA,L]
+RewriteRule ^equipment/$ equipment.php [QSA,L]
+RewriteRule ^/$ index.php [QSA,L]
+RewriteRule ^solution/([0-9]+)-([a-z0-9\-]+)?$ view_solutions.php?id=$1 [L]
+RewriteRule ^equipment/([0-9]+)-([a-z0-9\-]+)?$ view_equipment.php?id=$1 [L]
