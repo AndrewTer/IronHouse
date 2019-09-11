@@ -3,7 +3,6 @@
   width:100%;
   max-width: 1140px;
   height:100%;
-  /*max-height: 358px;*/
   margin: auto;
   background-size: cover;
   background: url('../images/fon.png');
@@ -13,15 +12,15 @@
     font: 30px  sans-serif;
     color: rgb(46,95,122);
 }
+
 body
 {
-    /*background: url('../images/fon/fon.jpg'); */
     -moz-background-size: 100%; /* Firefox 3.6+ */
-    -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+    -webkit-background-size: 100%; /* Safari 3.1+ ГЁ Chrome 4.0+ */
     -o-background-size: 100%; /* Opera 9.6+ */
-    background-size: 100%; /* Современные браузеры */
-    
+    background-size: 100%
 }
+
 #block-body{
     width:  100%;
     height: auto;
@@ -32,13 +31,12 @@ body
     opacity: 0.95;
     box-shadow: 0px 0px 10px 4px gray;
     margin-bottom: 10px;
-    
 }
+
 #block-header{
     width: 100%;
     max-width: 1140px;    
     height: auto;
-    
     background-color: white;
     border-radius: 11px 11px 0 0;
     -webkit-border-radius: 11px 11px 0 0;
@@ -285,7 +283,6 @@ body
     padding-top: 10px;
     padding-bottom: 30px;
     height: auto;
-    /*border: 5px solid blue;*/
     overflow:hidden
 }
 #block-content-main{
@@ -784,39 +781,36 @@ right:-120px
 
 
 
-/*--Модальное окно--*/
+/*--РњРѕРґР°Р»СЊРЅРѕРµ РѕРєРЅРѕ--*/
 .popup_block{
    position: fixed;
    top: 50%;
    left: 50%;
    z-index: 99999;
-   display: none; /*--по умолчанию скрыт--*/
+   display: none;
    float: left;
    -webkit-box-sizing: content-box;
    -moz-box-sizing: content-box; 
    box-sizing: content-box;
    padding: 15px;
    border: 10px solid #6e6e6e;
-/*-- скругленные углы--*/
    -webkit-border-radius: 5px;
    -moz-border-radius: 5px;
    border-radius: 5px;
    background: #fff;
-/*--тени для блока--*/
    -webkit-box-shadow: 0px 0px 20px #000;
    -moz-box-shadow: 0px 0px 20px #000;
    box-shadow: 0px 0px 20px #000;
    color: #000;
    font-size: .9em;
 }
-/*--Фиксированное позиционирование для IE6--*/
+/*--Р¤РёРєСЃРёСЂРѕРІР°РЅРЅРѕРµ РїРѕР·РёС†РёРѕРЅРёСЂРѕРІР°РЅРёРµ РґР»СЏ IE6--*/
 *html #fade {
    position: absolute;
 }
 *html .popup_block {
    position: absolute;
 }
-/*--блок заголовка--*/
 .note{
    margin:0 0 30px 0;
 }
@@ -831,7 +825,7 @@ right:-120px
    text-shadow: 0 1px 3px rgba(0,0,0,.3);
    font:24px Monotype Corsiva, Arial;      
 }
-/* формируем кнопку закрытия */
+/* РєРЅРѕРїРєР° Р·Р°РєСЂС‹С‚РёСЏ */
 .close {
     position: absolute;
     top: -18px;
@@ -866,30 +860,24 @@ right:-120px
 }
 .close:hover {
     background-color: rgba(252, 20, 0, 0.8);
-/*--крутим кнопку при наведении--*/
     -webkit-transform: rotate(360deg);
     -moz-transform: rotate(360deg);
     -ms-transform: rotate(360deg);
     -o-transform: rotate(360deg);
     transform: rotate(360deg);    
 }
-/* контактная форма */
+
 #form-feedback{
     overflow: hidden;
     margin: 0 auto;
     padding-top: 10px;
-/* устанавливаем необходимую ширину формы в зависимости от дизайна
- ** форма отлично растягивается */
     width: 100%;
     border: 1px solid #D3D3D3;
-/* закругляем углы */
     border-radius:8px;
     background: none repeat scroll 0 0 #FFFFFF;
-/* добавляем тени для блока*/
     box-shadow: 0 0 5px #CCCCCC, 1px 1px 0 #FFFFFF inset, -1px -1px 0 #FFFFFF inset, 0 0 15px #DDDDDD inset;
     text-align: left;
 }
-/* формируем элементы внутри формы */
 #form-feedback fieldset{
     display:inline;
     float:left;
@@ -901,8 +889,7 @@ right:-120px
 }		 
 #form-feedback p{
     margin:.5em 0;
-}
-/* подписи к полям ввода */	
+}	
 #form-feedback label{
     display:block;
     margin-bottom:1px;
@@ -910,23 +897,18 @@ right:-120px
 }	
 #form-feedback input, #form-feedback textarea, #form-feedback select{
     padding:3px;
-/* отключаем бордюры у инпутов и текстового поля */
     border: none;
-/* закругляем углы полей ввода */
     -webkit-border-radius:.3em;
     -moz-border-radius:.3em;
     border-radius:.3em;		
     background-color: #F7F7F7;
-/* добавляем внутренние тени у инпутов и текстового поля */
     box-shadow: inset 0 0 5px rgba(0,0,0,0.1), inset 0 1px 2px rgba(0,0,0,0.3);
     color: #5B5B5B;
     font:13px Trebuchet MS, Arial, Helvetica, Sans-Serif;
 }
 #form-feedback input ,#form-feedback select{
-/* устанавливаем ширину инпутов */
    width:90%;
 }
-/* изменяем оформление полей ввода при фокусе */
 #form-feedback input:focus, #-feedback textarea:focus ,#form-feedback select:focus{
   background: #F2F2F2;
   box-shadow: inset 0 0 5px rgba(0,0,0,0.2), inset 0 1px 2px rgba(0,0,0,0.4);
@@ -935,57 +917,43 @@ right:-120px
 #form-feedback textarea{
     overflow:auto;
     width:100%;
-/* устанавливаем ширину текстового поля */
     height:155px;
-}
-/* формируем нижний сектор формы */					
+}				
 #form-feedback p.submit{
     clear:both;
     margin:0;
     padding: 10px 25px 20px;
     text-align:right;
 }
-/* оформляем кнопку отправки */	
 #form-feedback button{
-/* устанавливаем необходимую ширину кнопки */
     border: solid 1px #2f96b4;
-/* закругляем углы кнопки */
     border-radius: 5px;
-    background-color: #49AFCD;
-/* градиентная заливка для современных браузеров */	
+    background-color: #49AFCD;	
     background-image:-moz-linear-gradient(center top , #5BC0DE, #2F96B4);
     background-image: -webkit-linear-gradient(center top, #5bc0de, #2f96b4);
     background-image: -ms-linear-gradient(#5bc0de, #2f96b4);
     background-image:-o-linear-gradient(center top , #5BC0DE, #2F96B4);
-/* добавляем внешние тени */
     box-shadow: 0 1px 2px rgba(0,0,0,0.4);
     color:#fff;
     padding:0 12px;
     text-align:center;
     line-height:28px;
-/* градиент для IE6-9 */
     filter: progid:DXImageTransform.Microsoft.Gradient(StartColorStr='#5BC0DE', EndColorStr='#2F96B4', GradientType=0); 
     cursor:pointer;
 }
-/* изменяем оформление кнопки при наведении */
 #form-feedback button:hover {
     border-color: #2C8BA5;
     box-shadow: none;
 }
-/* изменяем оформление кнопки при нажатии */
 #form-feedback button:active {
     border-bottom: 1px solid #5BC0DE;
     background-image:-moz-linear-gradient(#2F96B4, #5BC0DE); /* Firefox */
     background-image: -webkit-linear-gradient(#2F96B4, #5BC0DE); /* Chrome, Safari */
     background-image: -ms-linear-gradient(#2F96B4, #5BC0DE); /* IE-10 */
     background-image:-o-linear-gradient(#2F96B4, #5BC0DE); /* Opera */
-/* добавляем внутренние тени */
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3) inset;
-/* градиент для IE6-9 */
     filter: progid:DXImageTransform.Microsoft.Gradient(StartColorStr='#2F96B4', EndColorStr='#5BC0DE', GradientType=0);
 }
-/* конец формы */
-
 
 #form-success{
     font: bold 14px sans-serif;
@@ -1072,29 +1040,29 @@ right:-120px
  }
  
  .b-carousel  {
-	width: auto; /* ширина всего блока */
+	width: auto; 
 	margin-left: 20px;
     margin-right: 20px;
     height: auto;
 }
 .h-carousel-wrapper {
-    width: auto; /* ширина области карусели */
+    width: auto; 
     height: auto;
     position: relative;
-    overflow: hidden; /* скрываем содержимое, выходящее за рамки основной области */
-    margin: 10px; /* выравниваем по центру относительно родительского блока */
+    overflow: hidden;
+    margin: 10px;
     padding-bottom: 10px;
 }
 .h-carousel-items {
-    width: 10000px; /* устанавливаем большую ширину для набора элементов карусели, чтобы в неё всё поместилось */
-    position: relative; /* позиционируем блок относительно основной области карусели */
+    width: 10000px; 
+    position: relative; 
 }
 .b-carousel-block {
-    float: left; /* выстраиваем все элементы карусели в ряд */
-    width: auto; /* задаём ширину каждого элемента */
-    padding: 5px 5px; /* делаем оступы, чтобы элементы не сливались */
+    float: left; 
+    width: auto; 
+    padding: 5px 5px; 
 }
-.a-carousel-image-link { /* тут чисто оформление содержимого */
+.a-carousel-image-link { 
     display: block;
     width: 244px;
     height: 190px;
@@ -1102,44 +1070,31 @@ right:-120px
     border: 3px solid #F5F5F5;
     box-shadow: 0.4em 0.4em 5px #DDDDDD;
 }
-.a-carousel-image-link:hover { /* тут чисто оформление содержимого */
+.a-carousel-image-link:hover { 
     box-shadow: 0.6em 0.6em 7px #C5C5C5;
 }
 .b-carousel-button-left, .b-carousel-button-right {
-    width: 28px; /* задаем ширину кнопок */
-    height: 28px; /* задаем высоту кнопок */
+    width: 28px; 
+    height: 28px; 
     position: relative;
-    top: 90px; /* позиционируем кнопки */
-    cursor: pointer; /* делаем кнопкам курсор в виде "пальца" */
+    top: 90px; 
+    cursor: pointer; 
 }
 .b-carousel-button-left {
-    float: left; /* выравниваем левую кнопку по левому краю */
-    background: url(../images/left.png); /* картинка с левой кнопкой */
+    float: left; 
+    background: url(../images/left.png); 
     background-size: 100%;
 }
 .b-carousel-button-right {
-    float: right; /* выравниваем правую кнопку по правому краю */
-    background: url(../images/right.png); /* картинка с правой кнопкой */
+    float: right; 
+    background: url(../images/right.png); 
     background-size: 100%;
 }
 .galimg{
     width: 100%;
     height: 100%;
 }
-/*.galimg:focus {
-  position: fixed;
-  top: 20%;
-  left: 20%;
-  z-index: 71;  
-  max-width: 60%;
-  max-height: 70%;
-  outline: none;
-  /*pointer-events: none;
-}   
-*/
 
-
-/* строка меню */ 
 #menus { 
     margin: 0px; 
     padding: 0px 5px 0px 5px; 
@@ -1149,8 +1104,7 @@ right:-120px
     background: #FFFFFF; 
     font-family: Arial; 
 } 
-  
-/* вкладка меню */ 
+   
 #menus li { 
     float: left; 
     display: inline; 
@@ -1164,14 +1118,12 @@ right:-120px
     border-radius: 4px 4px 0 0; 
 } 
   
-/* активная вкладка меню */ 
 .tab_active { 
     border-bottom: 2px solid #FFFFFF !important; 
     color: #000000 !important; 
     background: #FFFFFF !important; 
 } 
-  
-/* контейнер с блоками контента */ 
+ 
 #conta { 
     clear: both; 
     border: 2px solid #DDDDDD; 
@@ -1180,12 +1132,10 @@ right:-120px
     padding: 5px; 
 } 
   
-/* скрытый блок контента */ 
 #conta .tab_content { 
     display: none; 
 } 
-  
-/* видимый блок контента */ 
+   
 .visible { 
     display: block !important; 
 } 
