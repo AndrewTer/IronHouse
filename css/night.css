@@ -1,12 +1,12 @@
+body {
+margin: 0; 
+padding: 0;
+}
 
-
-body{margin: 0; padding: 0}
- #pixie
- {
-     position:fixed;
-
-     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#040429', endColorstr='#257EB7',GradientType=0 ); /* IE6-9 */
-margin:0;
-     padding:0;
-     background-size: 100% 100%;
-     }
+#pixie {
+position: fixed;
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr = '#040429', endColorstr = '#257EB7', GradientType = 0); /* IE6-9 */
+margin: 0;
+padding: 0;
+background-size: 100% 100%;
+}
